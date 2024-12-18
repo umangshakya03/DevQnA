@@ -26,7 +26,7 @@ const QuestionsDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
-  const url = "localhost:3000";
+  const url = process.env.REACT_APP_API_URL;
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();
