@@ -20,7 +20,7 @@ const DisplayAnswer = ({ question, handleShare }) => {
   return (
     <div>
       {question.answer.map((ans) => (
-        <div className='display-ans' key={ans._id}>
+        <div className='display-ans border-b' key={ans._id}>
           <div className='flex justify-between items-center'>
             <div>
               {/* Display the answer body */}
